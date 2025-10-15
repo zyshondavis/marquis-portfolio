@@ -1,0 +1,146 @@
+/* === Global Styles === */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+  --primary-color: #273c75;
+  --accent-color: #fbc531;
+  --background-color: #f5f6fa;
+  --text-color: #2f3640;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* === Header === */
+header {
+  background: linear-gradient(135deg, #192a56, #273c75);
+  color: var(--white);
+  text-align: center;
+  padding: 60px 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+header h2 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #dcdde1;
+}
+
+/* === Navigation === */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 10px 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 500;
+  background: rgba(255,255,255,0.1);
+  padding: 10px 18px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: var(--accent-color);
+  color: var(--primary-color);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* === Main Section === */
+main {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 30px;
+  background: var(--white);
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+main h3 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  border-bottom: 2px solid var(--accent-color);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+main p {
+  font-size: 1rem;
+  margin: 20px 0;
+  color: #353b48;
+}
+
+/* === Buttons / Links === */
+.button {
+  display: inline-block;
+  background: var(--accent-color);
+  color: var(--primary-color);
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: #ffe066;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* === Footer === */
+footer {
+  background: var(--primary-color);
+  color: var(--white);
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+  margin-top: 80px;
+  box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    margin: 8px 0;
+  }
+  main {
+    margin: 30px 15px;
+    padding: 20px;
+  }
+}
